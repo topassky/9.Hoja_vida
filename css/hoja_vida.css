@@ -1,0 +1,100 @@
+        /* Estilos básicos */
+        * {
+            box-sizing: border-box;
+        }
+
+        body, h1, h2, p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Estilos para la cabecera y el pie de página */
+        .header, .footer {
+            background-color: #f1f1f1;
+            color: black;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        /* Clearfix para .row */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Estilos para las columnas */
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        /* Estilos para pantallas más anchas que 600px */
+        @media only screen and (min-width: 600px) {
+            .col-3 {width: 25%;}
+            .col-9 {width: 75%;}
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .skills-section, .languages-section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            color: teal;
+            margin-bottom: 10px;
+        }
+
+        .skill, .language {
+            margin-bottom: 10px;
+        }
+
+        .skill-name, .language-name {
+            font-weight: bold;
+        }
+
+        .skill-level-inner, .language-level-inner {
+            height: 20px;
+            border-radius: 10px;
+            background-color: teal;
+        }
+
+        .skill-level-inner {
+            width: 90%; /* Ejemplo para una habilidad */
+        }
+
+        .language-level-inner {
+            width: 100%; /* Ejemplo para un idioma */
+        }
+
+        /* Estilos Generales */
+        .experience-item, .education-item {
+            background-color: white;
+            margin-bottom: 1px;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-title, .education-title {
+            font-weight: bold;
+            color: #008080; /* Teal */
+        }
+
+        .experience-dates, .education-dates {
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Detalles Específicos */
+        .experience-item h3, .education-item h3 {
+            color: #333; /* Gris oscuro */
+        }
+
+        .experience-item p, .education-item p {
+            color: #666; /* Gris medio */
+        }
